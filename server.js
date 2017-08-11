@@ -8,11 +8,23 @@ app.use(express.static('client'));
 
 var io = require('socket.io')(server);
 
+function isQuestion(msg) {
+  return msg.match(/\?$/)
+}
+
+function askingTime(msg) {
+  return msg.match(/time/)
+}
+
 io.on('connection', function (socket) {
   
   socket.on('message', function (msg) {
     console.log('Received Message: ', msg);
-    io.emit('message', msg);
+    if (!isQuestion(msg)) {
+      io.emit('message', msg);
+    } else if (askingTime(msg)) {
+      io.emit('message', new Date);
+    } 
   });
 });
 
