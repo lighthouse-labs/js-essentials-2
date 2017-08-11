@@ -1,0 +1,26 @@
+{
+  "name": "js-in-3hrs-full",
+  "version": "1.0.0",
+  "description": "bit.ly/lhl-js",
+  "main": "server-last.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugonzal/js-in-3hrs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jugonzal/js-in-3hrs/issues"
+  },
+  "homepage": "https://github.com/jugonzal/js-in-3hrs#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "http": "0.0.0",
+    "socket.io": "^2.0.3"
+  }
+}
