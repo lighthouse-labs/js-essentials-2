@@ -13,7 +13,7 @@ function isQuestion(msg) {
 }
 
 function askingTime(msg) {
-  return msg.match(/time/)
+  return msg.match(/time/i)
 }
 
 io.on('connection', function (socket) {
