@@ -45,7 +45,7 @@ Chat Application running...
 
 And if you use your browser to open the URL:  http://localhost:8080 you should see the chat application.  Go ahead, give it a try.
 
-[Screenshot]: https://github.com/jugonzal/gitbook-node-chat-tutorial/blob/master/assets/example-cropped.png "Screenshot"
+![Screenshot](https://github.com/jugonzal/gitbook-node-chat-tutorial/blob/master/assets/example-cropped.png)
 
 ### CODE REVIEW
 
