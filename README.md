@@ -32,8 +32,8 @@ I'll share a lot of code, just in case you don't have it.  As many professional 
 
 The following sequence of commands will download the code into a new folder and prepare your computer to run the software.  This is necessary because you may not have all the tools and libraries that the software needs to run.
 ```
-git clone bit.ly/lhl-js2
-cd project
+git clone https://github.com/lighthouse-labs/js-essentials-2
+cd js-essentials-2
 npm install
 npm start
 ```
@@ -45,8 +45,7 @@ Chat Application running...
 
 And if you use your browser to open the URL:  http://localhost:8080 you should see the chat application.  Go ahead, give it a try.
 
-[ screen shot of application ]
-
+[Screenshot]: https://github.com/jugonzal/gitbook-node-chat-tutorial/blob/master/assets/example-cropped.png "Screenshot"
 
 ### CODE REVIEW
 
@@ -162,41 +161,41 @@ Before we start writing any code, let's understand what exactly is happening her
 ### JSON
 
 ```json
-{ consolidated_weather: 
-   [ { id: 5093320921448448,
-       weather_state_name: 'Heavy Rain',
-       weather_state_abbr: 'hr',
-       wind_direction_compass: 'S',
-       created: '2017-08-11T20:34:23.801200Z',
-       applicable_date: '2017-08-11',
-       min_temp: 19.16,
-       max_temp: 23.448333333333334,
-       the_temp: 22.886666666666667,
-       wind_speed: 6.816575418346193,
-       wind_direction: 179.21851889023347,
-       air_pressure: 1012.51,
-       humidity: 84,
-       visibility: 11.815062534796787,
-       predictability: 77 } ],
-  time: '2017-08-11T19:10:55.555640-04:00',
-  sun_rise: '2017-08-11T06:17:56.668717-04:00',
-  sun_set: '2017-08-11T20:28:07.284434-04:00',
-  timezone_name: 'LMT',
-  parent: 
-   { title: 'Canada',
-     location_type: 'Country',
-     woeid: 23424775,
-     latt_long: '56.954681,-98.308968' },
-  sources: 
-   [ { title: 'BBC',
-       slug: 'bbc',
-       url: 'http://www.bbc.co.uk/weather/',
-       crawl_rate: 180 } ],
-  title: 'Toronto',
-  location_type: 'City',
-  woeid: 4118,
-  latt_long: '43.648560,-79.385368',
-  timezone: 'America/Toronto' }
+{ "consolidated_weather": 
+   [ { "id": 5093320921448448,
+       "weather_state_name": "Heavy Rain",
+       "weather_state_abbr": "hr",
+       "wind_direction_compass": "S",
+       "created": "2017-08-11T20:34:23.801200Z",
+       "applicable_date": "2017-08-11",
+       "min_temp": 19.16,
+       "max_temp": 23.448333333333334,
+       "the_temp": 22.886666666666667,
+       "wind_speed": 6.816575418346193,
+       "wind_direction": 179.21851889023347,
+       "air_pressure": 1012.51,
+       "humidity": 84,
+       "visibility": 11.815062534796787,
+       "predictability": 77 } ],
+  "time": "2017-08-11T19:10:55.555640-04:00",
+  "sun_rise": "2017-08-11T06:17:56.668717-04:00",
+  "sun_set": "2017-08-11T20:28:07.284434-04:00",
+  "timezone_name": "LMT",
+  "parent": 
+   { "title": "Canada",
+     "location_type": "Country",
+     "woeid": 23424775,
+     "latt_long": "56.954681,-98.308968" },
+  "sources": 
+   [ { "title": "BBC",
+       "slug": "bbc",
+       "url": "http://www.bbc.co.uk/weather/",
+       "crawl_rate": 180 } ],
+  "title": "Toronto",
+  "location_type": "City",
+  "woeid": 4118,
+  "latt_long": "43.648560,-79.385368",
+  "timezone": "America/Toronto" }
 ```
 
 Reading JSON notation and figuring out how to access this data is half the battle of integrating data from the web into your application.  We should practice that.
