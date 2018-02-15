@@ -21,6 +21,7 @@
   "dependencies": {
     "express": "^4.15.4",
     "http": "0.0.0",
+    "request": "^2.83.0",
     "socket.io": "^2.0.3"
   }
 }
