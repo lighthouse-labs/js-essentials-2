@@ -4,7 +4,7 @@ $("button").on('click', function() {
   var text = $("#message").val();
   var who = $("#initials").val();
   
-  socket.emit('message', "[" + (new Date()) + "]" + who + ": " + text);
+  socket.emit('message', who + ": " + text);
   $('#message').val('');
   
   return false;
